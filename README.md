@@ -16,7 +16,7 @@ The MERN Blog App is a full-stack web application built using the MERN stack, wh
 
                                *** Technologies Used ***
 
-=>Frontend: React.js
+=>Frontend: React-js, Javascript, HTML,CSS
 
 =>Backend: Node.js, Express.js, MongoDB, Mongoose
 
