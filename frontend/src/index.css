@@ -112,7 +112,7 @@ section{
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #e7c2c2;
+  background-color: #7692ef;
   width: 100%;
   position: fixed;
   top:0;
@@ -124,7 +124,7 @@ section{
 
 .nav_logo img {
   height: 60px; /* Adjust height as needed */
-  width: 80px;
+  width: 60px;
   border-radius: 40px;;
 }
 
@@ -537,7 +537,7 @@ input ,select,textarea{
       position: absolute;
       top: 60px; /* Adjust top position as needed */
       left: 0;
-      background-color: #333;
+      background-color: #181e39;
       width: 100%;
       padding: 10px 0;
       z-index: 1;
@@ -550,6 +550,13 @@ input ,select,textarea{
     .nav_menu li {
       margin: 10px 0;
       text-align: center;
+    }
+  
+    .nav_menu li:hover {
+      transition: all;
+      background-color: #e5a0a0;
+      padding: 10px 5px;
+      color:#0c0c22
     }
   
     .nav_toggle_btn {
