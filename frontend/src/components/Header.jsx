@@ -26,6 +26,7 @@ function Header() {
     setNavShow(!Navshow);
   }
 
+
   return (
     <nav>
       <div className="container nav_container">
@@ -38,17 +39,17 @@ function Header() {
         <ul className={`nav_menu ${Navshow ? 'show' : ''}`}>
           {currentUser?.id &&
             <>
-              <li><Link to={`profile/${currentUser.id}`}>{currentUser.name}</Link></li>
-              <li><Link to="/create">Add Post</Link></li>
-              <li><Link to="/authors">Authors</Link></li>
-              <li><Link to="/logout">Logout</Link></li>
+              <li><Link to={`profile/${currentUser.id}`}onClick={toggleNav}>{currentUser.name}</Link></li>
+              <li><Link to="/create"onClick={toggleNav}>Add Post</Link></li>
+              <li><Link to="/authors"onClick={toggleNav}>Authors</Link></li>
+              <li><Link to="/logout"onClick={toggleNav}>Logout</Link></li>
             </>
           }
           {!currentUser?.id &&
             <>
-              <li><Link to="/authors">Author</Link></li>
-              <li><Link to="/login">Login</Link></li>
-              <li><Link to="/register">Sign up</Link></li>
+              <li><Link to="/authors" onClick={toggleNav}>Author</Link></li>
+              <li><Link to="/login"onClick={toggleNav}>Login</Link></li>
+              <li><Link to="/register"onClick={toggleNav}>Sign up</Link></li>
             </>
           }
         </ul>
